@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyPage</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/red.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure.min.css" /> 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+
+<body>
+<!--Step 1 aka Page 1 -->
+<div data-role="page" id="page1">
+	<!--header -- dibuang -->
+  
+  <!--content -->
+  <div role="main" class="ui-content">
+	<center><h3>Selamat Datang</h3>
+	<img src="gambar/logo-perak.jpg">
+	<h3> Portal Rasmi Perak Darul Ridzuan</h3>
+	</center>
+	<a href="#page2" class="ui-btn" data-transition="turn">Sejarah</a>
+	<a href="#page3" class="ui-btn" data-transition="flow">Piagam Pelanggan</a>
+	<a href="#page4" class="ui-btn" data-transition="slide">Direktori Staf</a>
+
+  </div>
+  
+  <!--footer -- dibuang -->
+
+
+</div>
+
+<!--Page 2 -->
+<div data-role="page" id="page2" > 
+	<!--panel-->
+	<div data-role="panel" id="panel1" data-display="overlay">
+		<h3> Senarai mukasurat</h3>
+		<br>
+		<ul data-role="listview">
+			<!--link asal <li><a href="page2">Sejarah</a></li>-->
+			<li><a href="luar1.html" data-transition="turn">Fail Luar 1</a></li>
+			<li><a href="page3">Piagam Pelanggan</a></li>
+			<li><a href="page4">Direktori Staf</a></li>
+		</ul>
+	</div>
+	<!--header -->
+	  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali"><!--tambah back button -->
+		<a href="#panel1" data-icon="bars" data-iconpos="notext">Menu</a>
+		<h3>Portal Rasmi Perak</h3>
+		
+	  </div>
+  
+  <!--content -->
+  <div role="main" class="ui-content">
+	<center><h3>SEJARAH PENTADBIRAN</h3>
+		<img src="gambar/suk-perak.jpg"></center>
+		<p>Pejabat Setiausaha Kerajaan Negeri Perak ditubuhkan pada tahun 1948 melalui Perjanjian Perak di antara Sultan Abdul Aziz Al-Mutasim Billah Shah dengan Sir Gerard Edward J. Gent pada 21 Januari 1948. Melalui perjanjian ini, satu undang-undang perlembagaan Perak telah dibentuk pada 1 Februari 1948. Perlembagaan ini menggariskan hak-hak dan kuasa Sultan serta memperuntukkan satu pentadbiran Kerajaan yang terdiri daripada Majlis Mesyuarat Kerajaan dan Majlis Mesyuarat Negeri sebagai badan yang bertanggungjawab untuk membantu dan menasihati Sultan di dalam menjalankan tugasnya.</p>
+
+		<p>Perlembagan ini memperuntukkan perlantikan Menteri Besar, Setiausaha Kerajaan Negeri dan Pegawai Kewangan Negeri dengan kuasa pelantikannya oleh Sultan. Ketiga-tiga ahli ex-officio ini bersama dua lagi ahli ex-officio yang lain iaitu Penasihat British dan Penasihat Undang-undang, adalah merupakan ahli Majlis Mesyuarat Kerajaan dengan mempunyai seorang ahli rasmi. Majlis Mesyuarat Negeri pula terdiri daripada Menteri Besar sebagai Presiden dan empat orang ahli ex-officio iaitu Penasihat British, Setiausaha Kerajaan Negeri dengan mempunyai 10 orang ahli rasmi dan 19 orang ahli tidak rasmi.</p>
+
+		<p>Menteri Besar Perak yang pertama dilantik (sebelum Merdeka) ialah Tuan Haji Abdul Wahab bin Toh Muda Abdul Aziz dan Setiausaha Kerajaan Negeri ialah Che Ahmad Bin Osman. Fungsi Pejabat Setiausaha Kerajaan Perak ialah merancang, menggerak, mengurus, menyelaras dan mengawal semua jentera pembangunan ekonomi dan sosial negeri melalui perkhidmatan yang bersih, cekap dan amanah. Pejabat Setiausaha Kerajaan Perak juga menentu dan menyelaraskan perlaksanaan dasar mengenai aktiviti-aktiviti negeri meliputi perancangan dan pembangunan, keselamatan, aktiviti-aktiviti Jabatan Kerajaan, badan-badan Berkanun dan Kuasa-kuasa Tempatan Negeri, perkhidmatan kakitangan dan hal ehwal lain dalam negeri.</p>
+
+		<!-- Untuk buat pop up message-->
+		<a href="#pop1" class="ui-btn ui-btn-inline" data-rel="popup" data-transition="pop">Visi</a>
+		<div data-role="popup" id="pop1">
+			<!-- untuk tambah button close pada popup message-->
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<h3>Visi</h3>
+				<p>Menjadi jentera pentadbiran Kerajaan Negeri yang bertaraf dunia pada 2015 untuk kebajikan dan kesejahteraan yang berkualiti dan kemakmuran kepada rakyat.</p>
+		</div>
+		<!--- untuk buat dialog box -->
+
+
+
+<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Visi</a>
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>Visi</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Visi</h3>
+		<p>Menjadi jentera pentadbiran Kerajaan Negeri yang bertaraf dunia pada 2015 untuk kebajikan dan kesejahteraan yang berkualiti dan kemakmuran kepada rakyat..</p>
+        <a href="#page2" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" >Kembali</a>
+		<a href="#page3" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" >Seterusnya</a>
+    </div>
+</div>
+<!--- tamat untuk buat dialog box -->
+		
+  </div>
+ 
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">
+         <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid" data-icon="grid" class="ui-btn-active ui-state-persist">Sejarah</a></li>
+                <li><a href="#page3" data-icon="star" class="ui-btn-active" data-transition="slideup">Piagam Pelanggan</a></li>
+                <li><a href="#page4" data-icon="gear" class="ui-btn-active" data-transition="flow">Direktori Staf</a></li>
+            </ul>
+        </div><!-- /navbar -->
+  </div>
+</div>
+
+<!--Page 3 -->
+<div data-role="page" id="page3" > 
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali"><!--tambah back button -->
+	<h3>PIAGAM PELANGGAN</h3>
+	
+  </div>  
+   <!--content -->
+  <div role="main" class="ui-content">
+<ul data-role="listview" data-inset="true"><!--listview tak sesuai dengan teks yang panjang-->
+	<center>Kami beriltizam untuk memberi perkhidmatan berkualiti seperti berikut :</center>
+	<li>Mengemukakan keputusan permohonan dan cadangan projek yang lengkap dalam masa tiga (3) bulan.
+	</li>
+	<li>Memberi input serta pandangan dari sudut sosio ekonomi yang diperlukan oleh jabatan/agensi lain dalam masa 14 hari bekerja.
+	</li>
+	<li>Mengendalikan majlis-majlis rasmi Kerajaan Negeri dengan teliti dan berkesan mengikut peraturan dan atur cara yang ditetapkan.
+	</li>	
+	<li>Semua baucar pembayaran yang teratur akan dibayar dalam tempoh sepuluh (10) hari dari tarikh penerimaan invois yang lengkap.
+	</li>
+</ul>
+<br>
+
+<!--collapsible list--->
+<div data-role="collapsible-set"><!--bila satu set terbuka, yang lain tertutup-->
+	<div data-role="collapsible" data-collapsed="false"><!-- data collapsed automatik terbuka-->
+		<h4>Visi</h4>
+		<p>Menjadi jentera pentadbiran Kerajaan Negeri yang bertaraf dunia pada 2015 untuk kebajikan dan kesejahteraan yang berkualiti dan kemakmuran kepada rakyat.</p>
+	</div>
+
+
+	<div data-role="collapsible">
+		<h4>Misi</h4>
+		<p>Memajukan penyampaian perkhidmatan Kerajaan melalui penambahbaikan berterusan untuk memenuhi kehendak semua pelanggan dan rakyat.</p>
+	</div>
+
+
+	<div data-role="collapsible"><!--listview tak sesuai dengan teks yang panjang-->
+		<h4>Objektif</h4>
+		<p>Membangun penyampaian perkhidmatan awam melalui tadbir urus korporat, inovasi dan kreativiti yang berkualiti dan amalan mesra pelanggan dan rakyat.</p>
+		<p>Meningkatkan kemajuan sosio-ekonomi ke tahap berprestasi tinggi, lestari, seimbang dan adil.</p>
+		<p>Meningkatkan imej perkhidmatan awam sebagai perkhidmatan yang mendahulukan pelanggan, proaktif dan cepat dalam mengatasi permasalahan pelanggan / rakyat.</p>
+	</div>
+</div>
+<!--end collapsible list--->
+</div>
+<!--Contoh link pertama
+<a href="#page2" class="ui-btn" data-transition="pop" data-direction="reverse">Sejarah</a>
+<a href="#page3" class="ui-btn" data-transition="pop" data-direction="reverse">Misi, Visi, Objektif</a> 
+ Contoh link kedua
+<a href="#page2" class="ui-btn ui-btn-inline" data-transition="pop" data-direction="reverse">Sejarah</a>
+<a href="#page4" class="ui-btn ui-btn-inline" data-transition="pop" data-direction="reverse">Direktori Staf</a> -->
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">
+             <div data-role="navbar">
+            <ul>
+                <li><a href="#page2" data-icon="grid">Sejarah</a></li>
+                <li><a href="#page3" data-icon="star" class="ui-btn-active">Piagam Pelanggan</a></li>
+                <li><a href="#page4" data-icon="gear">Direktori Staf</a></li>
+            </ul>
+        </div><!-- /navbar -->
+  </div>
+</div>
+
+<!--Page 4 -->
+<div data-role="page" id="page4">
+		<!--header -->
+	  <div data-role="header" data-position="fixed">
+		<h3>Direktori Staf</h3>
+		
+	  </div>
+  
+		<!--content -->
+	  <div role="main" class="ui-content">
+		  <ul data-role="listview" data-filter="true" data-filter-placeholder="Taipkan Nama"><!--carian nama-->
+		  </ul>
+		  <ul data-role="listview" data-inset="true">
+				<li><img src="gambar/mb.jpg">
+				<h2>Y.A.B. Dato' Seri DiRaja Dr. Zambry bin Abd Kadir <br>Menteri Besar Perak</h2>
+				<p>Pejabat YAB Menteri Besar Perak<br>Aras 2, Bangunan Perak Darul Ridzuan,<br>Jalan Panglima Bukit Gantang Wahab,<br>30000 Ipoh Perak</p>
+				<p><a href="tel:+60196671160">Telefon</a> | <a href="sms://+60196671160">SMS</a> | <a href="mailto:maznijakeri@perak.gov.my">Emel</a></p>
+			   </li>
+			   
+				<li><img src="gambar/yb_ss.jpg">
+				<h2>Y.B. Dato’ Abdul Puhat bin Mat Nayan <br>Setiausaha Kerajaan Negeri</h2>
+				<p>Pejabat Y.B. Setiausaha Kerajaan Negeri Perak<br>Aras 2, Bangunan Perak Darul Ridzuan,<br>Jalan Panglima Bukit Gantang Wahab,<br>30000 Ipoh Perak</p>
+				<p><a href="tel:+60196671160" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a> 
+				<a href="sms://+60196671160" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+				<a href="mailto:maznijakeri@perak.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Emel</a></p>
+				</li>
+				
+				<li><img src="gambar/SUB_BKT.jpg">
+				<h2>Mohd Zakuan bin Haji Zakaria <br>Setiausaha Bahagian </h2>
+				<p>Bahagian Kerajaan Tempatan<br>Aras B, Bangunan Perak Darul Ridzuan,<br>Jalan Panglima Bukit Gantang Wahab,<br>30000 Ipoh Perak<br><br>mzakuan@perak.gov.my</p>
+					<p><a href="tel:+60196671160" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a> 
+				<a href="sms://+60196671160" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+				<a href="mailto:maznijakeri@perak.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Emel</a></p>
+				</li>
+				
+				<li><img src="gambar/SUB_BPM.jpg">
+				<h2>Md Ali bin Aziz<br>Setiausaha Bahagian  </h2>
+				<p>Bahagian Pengurusan Maklumat<br>Aras G, Bangunan Perak Darul Ridzuan,<br>Jalan Panglima Bukit Gantang Wahab,<br>30000 Ipoh Perak</p>
+					<p><a href="tel:+60196671160" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a> 
+				<a href="sms://+60196671160" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+				<a href="mailto:maznijakeri@perak.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Emel</a></p>
+				</li>
+			</ul>
+
+	  </div>
+  
+		<a href="#page5" class="ui-btn" data-transition="pop" data-direction="reverse">Seterusnya>></a>
+		  <!--footer -->
+		  <div data-role="footer" data-position="fixed">
+				   <div data-role="navbar">
+					<ul>
+						<li><a href="#page2" data-icon="grid">Sejarah</a></li>
+						<li><a href="#page3" data-icon="star" class="ui-btn-active">Piagam Pelanggan</a></li>
+						<li><a href="#page4" data-icon="gear">Direktori Staf</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			<!-- contoh footer asal <h3><a href="#page1" class="ui-btn">Utama</a></h3>-->
+		  </div>
+
+</div>
+
+<!--Step 5 aka Page 5 -->
+<div data-role="page" id="page5">
+	  <!--header -->
+	  <div data-role="header" data-position="fixed">
+		<h3>Direktori Staf</h3>
+		
+	  </div>
+  
+	  <!--content -->
+	  <div role="main" class="ui-content">
+			<!--style lain-->
+			<ul data-role="listview">
+				<li><a href="#d1" data-rel="popup" data-transition="slideup"><img src="gambar/SUB_UPEN.jpg">
+				
+				Dato' Haji Abu Bakar bin Haji Said <br>Timbalan Setiausaha Kerajaan (Pembangunan) 
+				<br>Unit Perancang Ekonomi Negeri<br>Aras 1, Bangunan Perak Darul Ridzuan,<br>Jalan Panglima Bukit Gantang Wahab,<br>30000 Ipoh Perak</a>
+				</li>
+			</ul>
+			<div data-role="popup" id="d1">
+				<a href="tel:+60196671160" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a> 
+				<a href="sms://+60196671160" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+				<a href="mailto:maznijakeri@perak.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Emel</a>
+			</div>
+		<!--tamat style lain-->	
+			<br>
+		<!--style lain-->
+			<ul data-role="listview">
+				<li><a href="#d1" data-rel="popup" data-transition="slideup"><img src="gambar/SUB_UPEN.jpg">
+				
+				Dato' Haji Abu Bakar bin Haji Said <br>Timbalan Setiausaha Kerajaan (Pembangunan) 
+				<br>Unit Perancang Ekonomi Negeri<br>Aras 1, Bangunan Perak Darul Ridzuan,<br>Jalan Panglima Bukit Gantang Wahab,<br>30000 Ipoh Perak</a>
+				</li>
+			</ul>
+			<div data-role="popup" id="d1">
+				<a href="tel:+60196671160" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a> 
+				<a href="sms://+60196671160" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+				<a href="mailto:maznijakeri@perak.gov.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Emel</a>
+			</div>
+			<!--tamat style lain-->
+
+		</div>
+
+	  <!--footer -->
+	  <div data-role="footer" data-position="fixed">
+				   <div data-role="navbar">
+				<ul>
+					<li><a href="#page2" data-icon="grid">Sejarah</a></li>
+					<li><a href="#page3" data-icon="star" class="ui-btn-active">Piagam Pelanggan</a></li>
+					<li><a href="#page4" data-icon="gear">Direktori Staf</a></li>
+				</ul>
+			</div><!-- /navbar -->
+	  </div>
+
+</div>
+</body>
+</html>
